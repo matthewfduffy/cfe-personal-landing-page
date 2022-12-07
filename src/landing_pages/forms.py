@@ -5,6 +5,7 @@ class LandingPageForm(forms.Form):
     email = forms.EmailField()
     email2 = forms.EmailField(label='Confirm Email')
 
+    # Validation Methods
     def clean(self):
         data = self.cleaned_data
         # email = self.cleaned_data.get("email")

@@ -17,4 +17,4 @@ def home_page(request, *args, **kwargs):
         "title": title.format,
         "form": form
     }
-    return render(request, "home.html", context)
+    return render(request, "landing_pages/home.html", context)
